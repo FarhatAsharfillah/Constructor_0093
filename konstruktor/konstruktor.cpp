@@ -20,7 +20,7 @@ mahasiswa::mahasiswa() {
 }
 
 mahasiswa::mahasiswa(int iNim) {
-	nama = iNama;
+	nama = iNim;
 }
 
 mahasiswa::mahasiswa(int iNama) {
@@ -34,4 +34,18 @@ mahasiswa::mahasiswa(int iNim, string iNama) {
 void mahasiswa::cetak() {
 	cout << endl << "Nim =" << nim << endl;
 	cout << "Nama = " << nama << endl;
+}
+
+int main() {
+	mahasiswa mhs1;
+	mahasiswa mhs2(20);
+	mahasiswa mhs3("Farhat");
+	mahasiswa mhs4(30, "Dimas");
+
+	mhs1.cetak();
+	mhs2.cetak();
+	mhs3.cetak();
+	mhs4.cetak();
+
+	return 0;
 }
